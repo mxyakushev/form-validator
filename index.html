@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper">
+            <header class="header">Create Account</header>
+            <form action="#" method="get" class="form">
+                
+                    <label class="label-first-name label label-upper">
+                        First name*
+                        <input class="first-name input" name="first-name" type="text"
+                            placeholder="enter your first name">
+                            <small class="error-text">Unknown error</small>
+                            <i class="fa-solid fa-circle-check icon-success"></i>
+                            <i class="fa-solid fa-circle-exclamation icon-error"></i>
+                    </label>
+
+                    <label class="label-last-name label label-upper">
+                        Last name*
+                        <input class="last-name input" name="last-name" type="text" placeholder="enter your last name">
+                        <small class="error-text">Unknown error</small>
+                        <i class="fa-solid fa-circle-check icon-success"></i>
+                        <i class="fa-solid fa-circle-exclamation icon-error"></i>
+                    </label>
+
+                    <label class="label-email label label-upper">
+                        Email*
+                        <input class="email input" name="email" type="text" placeholder="enter your email">
+                        <small class="error-text">Unknown error</small>
+                        <i class="fa-solid fa-circle-check icon-success"></i>
+                        <i class="fa-solid fa-circle-exclamation icon-error"></i>
+                    </label>
+
+                    <label class="label-password label label-upper">
+                        Password*
+                        <input class="password input" name="password" type="password" placeholder="enter your password">
+                        <small class="error-text">Unknown error</small>
+                        <i class="fa-solid fa-circle-check icon-success"></i>
+                        <i class="fa-solid fa-circle-exclamation icon-error"></i>
+                    </label>
+
+                    <label class="label-confirm-password label label-upper">
+                        Confirm password*
+                        <input class="confirm-password input" name="confirm-password" type="password"
+                            placeholder="enter your password again">
+                            <small class="error-text">Unknown error</small>
+                            <i class="fa-solid fa-circle-check icon-success"></i>
+                            <i class="fa-solid fa-circle-exclamation icon-error"></i>
+                    </label>
+                
+
+                
+                    <div class="gender-wrapper">
+                        <p class="item-name">Gender</p>
+                        <label class="label-male label">
+                            <span class="text"><input id="male-radio" type="radio" name="gender"
+                                    value="male">Male</span>
+                        </label>
+                        <label class="label-female label">
+                            <span class="text"><input id="female-radio" type="radio" name="gender"
+                                    value="female">Female</span>
+                        </label>
+                    </div>
+                        <label class="label-date label">
+                            Date* (m/d/yy)<br>
+                            <input class="date input" type="text" placeholder="enter the date">
+                            <small class="error-text">Unknown error</small>
+                            <i class="fa-solid fa-circle-check icon-success"></i>
+                            <i class="fa-solid fa-circle-exclamation icon-error"></i>
+                        </label>
+                    <div class="source-income-wrapper">
+                        <p class="item-name">Source of income</p>
+                        <select name="source-income" class="source-income">
+                            <option value="earned">Earned Income</option>
+                            <option value="investment">Investment Income</option>
+                            <option value="passive">Passive Income</option>
+                        </select>
+                    </div>
+
+                    <div class="income-wrapper">
+                        <p class="item-name">Income</p>
+                        <input id="income-range" type="range" name="income" value="0" min="0" max="100" step="1"
+                            oninput="this.nextElementSibling.value = this.value + ' k'">
+                        <output name="income" id="output">0 k</output>
+                    </div>
+
+                    <div class="upload-wrapper">
+                        <p class="item-name">Upload profile picture</p>
+                        <input id="upload-file" type="file" name="picture">
+                    </div>
+
+                    <div class="age-wrapper">
+                        <p class="item-name">Age</p>
+                        <input id="age-number" type="number" name="age">
+                    </div>
+
+                    <div class="bio-wrapper">
+                        <p class="item-name">Bio</p>
+                        <textarea name="bio" id="bio-textarea"></textarea>
+                    </div>
+                
+                <footer class="footer">
+                    <button type="submit" class="button">Create</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/78571f7f59.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
